@@ -1,0 +1,101 @@
+/* compileExpanded: ../css/◯1.css*/
+@import '../../common/scss/_module.scss';
+@charset "UTF-8";
+
+#${NAME}{
+  .secContents{
+    border:2px solid #bab169;
+    padding:2px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .contentBox{
+    margin:20px 0 0;
+    padding-top:0;
+    .contentBox_in{
+      margin: 0 0;
+      .content_txt{
+        text-align: left;
+        margin-bottom: 27px;
+        padding:0 4%;
+        @include txt(24,40,60);
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+
+      .estimateBox{
+        .estimateTit02{
+          background:#dedab8;
+          padding:15px 0;
+          text-align: center;
+          @include txt(25,80,0);
+          font-weight: 600;
+        }
+        .itemBox{
+          border: 2px solid #dedab8;
+          .estimateRow{
+            display: table;
+            width: 100%;
+            border-bottom: 2px solid #dedab8;
+            height: 60px;
+            &:last-child{
+              border: none;
+            }
+            .est_name{
+              display: table-cell;
+              width:25%;
+              text-align: left;
+              @include txt(22,30,0);
+              vertical-align: middle;
+              background: #f5f4ea;
+              font-weight: 600;
+              padding:0 1rem;
+            }
+            .est_contents{
+              width:65%;
+              display: table-cell;
+              text-align: left;
+              @include txt(22,30,60);
+              vertical-align: middle;
+              padding:0 1rem;
+            }
+            .est_check{
+              width:10%;
+              display: table-cell;
+              text-align: center;
+              @include txt(35,30,0);
+              vertical-align: middle;
+              background: #fafafa;
+            }
+          }
+        }
+      }
+      .otherPlan{
+        padding: 30px 0;
+        .btn{
+          display: inline-table;
+    width: 48%;
+    margin-right: 2%;
+    background: #484848 url(/sp/common/img/com_contactIcon_x.png) no-repeat 8% center;
+    background-size: 10% auto;
+    text-align: center;
+    border-radius: 4px;
+    min-height: 6rem;
+    vertical-align: top;
+    text-decoration: none;
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+    .btn-txt{
+      color:#FFF;
+      display: table-cell;
+      vertical-align: middle;
+      @include txt(26,16.8,100);
+      padding-left: 1rem;
+    }
+        }
+      }
+    }
+  }
+}
